@@ -33,13 +33,12 @@ public class LoginController {
     
     @GetMapping("/search")
     public String showSearchPage() {
-        return "teste";
+        return "72224806175";
     }
     
     @GetMapping("/redirect")
     public RedirectView simpleRedirect(@RequestParam("url") String target) {
         RedirectView redirectView = new RedirectView();
-        //target = "1.html";
         redirectView.setUrl(target);
         return redirectView;
     }
